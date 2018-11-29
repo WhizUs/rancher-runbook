@@ -1,0 +1,17 @@
+- name: install rancher prerequisites
+  apt:
+    name: "{{ packages }}"
+    update_cache: yes
+    cache_valid_time: 3600
+  vars:
+    packages:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - software-properties-common
+
+- name: install docker
+  apt:
+    name: docker.io
+    update_cache: yes
+    cache_valid_time: 3600

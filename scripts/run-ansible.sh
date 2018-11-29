@@ -1,0 +1,1 @@
+ansible-playbook ./ansible-playbook/rancher-provisioning.yml -i ./inventory

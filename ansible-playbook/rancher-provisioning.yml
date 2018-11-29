@@ -1,0 +1,8 @@
+---
+- hosts: [rancher_nodes]
+  become: true
+  become_user: root
+  become_method: sudo
+  roles:
+    - rancher-node-init-setup
+    
